@@ -1,9 +1,7 @@
 import { useState } from "react";
 import ContactRow from "./ContactRow";
 
-const ContactList = ({ setSelectedContactId }) => {
-  //   const [name, setName] = useState("");
-
+const ContactList = ({ contacts, setSelectedContactId }) => {
   return (
     <table>
       <thead>

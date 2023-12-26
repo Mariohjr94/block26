@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-import "./App.css";
-import ContactList from "./components/contactList";
-import SelectedContact from "./components/SelectedContact";
+import ContactList from "./ContactList";
+import SelectedContact from "./SelectedContact";
 
 function App() {
   const [selectedContactId, setSelectedContactId] = useState(null);
@@ -19,6 +18,7 @@ function App() {
         );
         const contacts = await response.json();
         setContacts(contacts);
+        console.log("contacts: ", contacts);
       } catch (error) {
         console.log(error);
       }

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const SelectedContact = (selectedContact) => {
+const SelectedContact = ({ selectedContact }) => {
   return <div>{selectedContact && selectedContact.name}</div>;
 };
 
